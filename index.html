@@ -2715,11 +2715,11 @@ function handleDrop(e, key) {
 // ══ DATE-BASED APPLICATION GATE ══
 function handleApply() {
   const now = new Date();
-  const open  = new Date('2026-04-14T00:00:00+09:00');
+  const open  = new Date('2026-04-13T00:00:00+09:00');
   const close = new Date('2026-04-27T00:00:00+09:00');
 
   if (now < open) {
-    alert('지원서 접수는 4월 14일(월)에 오픈됩니다.');
+    alert('지원서 접수는 4월 13일(월)에 오픈됩니다.');
   } else if (now >= close) {
     alert('지원서 접수가 마감되었습니다. (마감일: 4월 26일)');
   } else {
