@@ -1373,7 +1373,7 @@ footer {
     <li><a href="#roadmap">로드맵</a></li>
     <li><a href="#portfolio">Portfolio</a></li>
     <li><a href="#faq">FAQ</a></li>
-    <li><a href="#" onclick="handleApply();return false;" class="btn-apply">지원하기</a></li>
+    <li><a href="https://forms.gle/2bxZ7yNrwukvKA857" target="_blank" class="btn-apply">지원하기</a></li>
   </ul>
   <button class="nav-hamburger" id="nav-hamburger" aria-label="메뉴 열기" onclick="toggleMobileMenu()">
     <span></span><span></span><span></span>
@@ -1385,7 +1385,7 @@ footer {
   <a href="#roadmap" onclick="closeMobileMenu()">로드맵</a>
   <a href="#portfolio" onclick="closeMobileMenu()">Portfolio</a>
   <a href="#faq" onclick="closeMobileMenu()">FAQ</a>
-  <a href="#" onclick="closeMobileMenu();handleApply();return false;" class="mobile-menu-cta">지원하기</a>
+  <a href="https://forms.gle/2bxZ7yNrwukvKA857" target="_blank" onclick="closeMobileMenu()" class="mobile-menu-cta">지원하기</a>
 </div>
 
 <!-- HERO -->
@@ -1414,7 +1414,7 @@ footer {
     </div>
 
     <div class="hero-cta" style="margin-top:32px;">
-      <a href="#" onclick="handleApply();return false;" class="btn-hero">
+      <a href="https://forms.gle/2bxZ7yNrwukvKA857" target="_blank" class="btn-hero">
         지원하기
       </a>
       <span class="hero-date-note">모집 기간 2026.04.13 – 04.26</span>
@@ -1880,7 +1880,7 @@ footer {
           <div class="icon"><i class="fas fa-plus"></i></div>
         </div>
         <div class="faq-a">위 내용 외 궁금한 점은 이메일로 문의해 주세요. 빠르게 답변 드리겠습니다.<br><br>
-          <a href="mailto:pulls@gravityventures.kr" style="color:var(--blue-light);font-weight:700;text-decoration:none;">📧 pulls@gravityventures.kr</a>
+          <a href="/cdn-cgi/l/email-protection#5727223b3b2417302536213e232e2132392322253224793c25" style="color:var(--blue-light);font-weight:700;text-decoration:none;">📧 <span class="__cf_email__" data-cfemail="5f2f2a33332c1f382d3e29362b26293a312b2a2d3a2c71342d">[email&#160;protected]</span></a>
         </div>
       </div>
     </div>
@@ -1892,8 +1892,8 @@ footer {
   <canvas id="sf-cta" style="position:absolute;inset:0;width:100%;height:100%;z-index:0;pointer-events:none;"></canvas>
   <h2 class="cta-title">지금 도약할 때입니다</h2>
   <p class="cta-sub">그래비티벤처스 배치 1기, 바로 지원하세요.</p>
-  <a href="#" onclick="handleApply();return false;" class="btn-cta">지원하기 →</a>
-  <p style="margin-top:20px;font-size:0.82rem;color:var(--silver);">문의사항은 <a href="mailto:pulls@gravityventures.kr" style="color:var(--blue-light);text-decoration:none;font-weight:600;">pulls@gravityventures.kr</a> 로 보내주세요.</p>
+  <a href="https://forms.gle/2bxZ7yNrwukvKA857" target="_blank" class="btn-cta">지원하기 →</a>
+  <p style="margin-top:20px;font-size:0.82rem;color:var(--silver);">문의사항은 <a href="/cdn-cgi/l/email-protection#3747425b5b4477504556415e434e4152594342455244195c45" style="color:var(--blue-light);text-decoration:none;font-weight:600;"><span class="__cf_email__" data-cfemail="c6b6b3aaaab586a1b4a7b0afb2bfb0a3a8b2b3b4a3b5e8adb4">[email&#160;protected]</span></a> 로 보내주세요.</p>
 </div>
 
 
@@ -1908,7 +1908,7 @@ footer {
     <span style="color:var(--blue-light);font-weight:600;">경남지점</span> &nbsp;경남 창원시 의창구 창원대로18번길 46, 2층 7호 (팔용동, 경남창원과학기술진흥원)<br>
     <span style="color:var(--blue-light);font-weight:600;">제주지점</span> &nbsp;제주시 첨단로 330 세미양빌딩 A동 CH-112호 (영평동)<br>
     <br>© 2026 Gravity Ventures. All rights reserved.<br>
-    <a href="mailto:pulls@gravityventures.kr" style="color:var(--blue-light);text-decoration:none;font-weight:600;">pulls@gravityventures.kr</a>
+    <a href="/cdn-cgi/l/email-protection#8afaffe6e6f9caedf8ebfce3fef3fcefe4fefff8eff9a4e1f8" style="color:var(--blue-light);text-decoration:none;font-weight:600;"><span class="__cf_email__" data-cfemail="f58580999986b5928794839c818c83909b8180879086db9e87">[email&#160;protected]</span></a>
   </div>
 </footer>
 </div><!-- /page-home -->
@@ -2219,7 +2219,7 @@ footer {
   </div>
 </div><!-- /page-success -->
 
-<script>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>
 // ── STARFIELD (hero + cta only) ──
 function createStarfield(canvasId, starDensity) {
   const canvas = document.getElementById(canvasId);
@@ -2723,7 +2723,7 @@ function handleApply() {
   } else if (now >= close) {
     alert('지원서 접수가 마감되었습니다. (마감일: 4월 26일)');
   } else {
-    showPage('form');
+    window.open('https://forms.gle/2bxZ7yNrwukvKA857', '_blank');
   }
 }
 
@@ -2774,21 +2774,4 @@ function closeMobileMenu() {
   const menu = document.getElementById('mobile-menu');
   menu.style.opacity = '0';
   menu.style.transform = 'translateY(-10px)';
-  setTimeout(() => { menu.classList.remove('open'); }, 300);
-}
-// Close menu on outside click
-document.addEventListener('click', function(e) {
-  const menu = document.getElementById('mobile-menu');
-  const btn = document.getElementById('nav-hamburger');
-  if (menu && menu.classList.contains('open') && !menu.contains(e.target) && !btn.contains(e.target)) {
-    closeMobileMenu();
-  }
-});
-// Close menu on nav link click (anchor scroll)
-document.querySelectorAll('.mobile-menu a[href^="#"]').forEach(a => {
-  a.addEventListener('click', closeMobileMenu);
-});
-
-</script>
-</body>
-</html>
+  setTimeout(() => { menu.classList.remove
